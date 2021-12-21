@@ -18,6 +18,7 @@ const usersGet = ( req, res ) => {
 //POST
 const usersPost = async( req, res ) => {
 
+    //verificar si es un correo valido
     const errors = validationResult(req);
     if ( !errors.isEmpty() ) {
         return res.status(400).json(errors);

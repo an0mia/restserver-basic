@@ -40,7 +40,7 @@ class Server {
 
     routes() {
 
-       this.app.use( this.usersPath, require('../routes/users') );
+       this.app.use( this.usersPath, require('../routes/users.routes') );
 
     }
 
